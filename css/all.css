@@ -1,0 +1,252 @@
+*{
+   padding: 0;
+   margin :0;
+}
+
+#head{
+   /*
+   display: flex ;
+   align-items: center ;
+   justify-content: space-between ;
+   background-color: white;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   overflow: hidden;
+   box-shadow: 0.5px 0.1px 3px, -0.5px -6px  #EFEFEF;
+   padding :10px;
+   */
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   padding :10px;
+   box-shadow: 0.5px 0.1px 3px, -0.5px -6px  #EFEFEF;
+}
+.backicon{
+   display: flex ;
+   align-items: center ;
+   justify-content: space-between ;
+   padding:0px 10px;
+   
+}
+.backicon a{
+   text-decoration: none;
+   font-size: 30px ;
+   padding:10px 15px;
+}
+.backicon a:hover {
+   background-color: #DFDFDFD6;
+   padding:10px 15px;
+   border-radius: 50%;
+   color :#0606B5;
+}
+.nam{
+   margin-left: 20px ;
+   font-size: 30px ;
+}
+.icon3{
+   display :flex ;
+   align-items :center ;
+   justify-content: space-between ;
+   margin-right: 10px ;
+}
+.icon3 i{
+   margin :10px ;
+   font-size: 30px ;
+   color: #F500FF;
+}
+
+.profile{
+   position: relative;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background-color: #4070f4;
+   margin-left: 20px ;
+   
+}
+.pic{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+/*
+container
+*/
+
+
+.container {
+   width: 100%;
+   height: 500px;
+   position: fixed;
+   bottom :90px;
+   display :flex ;
+   justify-content: center ;
+   
+}
+.container .one {
+   position: relative;
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   background-color: #4070f4;
+   margin-top :0px;
+   display: block;
+}
+.one img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.container .nam{
+   position: absolute ;
+   top:200px ;
+   text-align: center ;
+   height: 50px;
+   margin-top: 10px;
+}
+.container .nam p{
+   font-size: 40px ;
+}
+.container .nam span{
+   background-color: #EFEFEF;
+   padding :5px 15px;
+   border-radius: 20px ;
+   font-size: 20px;
+   
+   
+}
+.small-pic{
+   position: relative;
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background-color: #4070f4;
+   margin-top :0px;
+   display: block;
+}
+.msg{
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 10px;
+}
+.msg img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.data h4{
+   margin-left: 10px;
+   font-size: 30px;
+   background-color: #F3F3F3;
+   border-radius: 20px;
+   padding: 0 10px;
+   font-weight: normal;
+}
+
+#foter{
+   
+   width: 100%;
+   height: 100px;
+   position: fixed ;
+   bottom: 0;
+   background-color: white;
+   display: flex;
+   align-items: center ;
+   justify-content: space-evenly;
+   
+   box-shadow: 0.5px 5px 5px, -0.5px -1px  #EFEFEF;
+   
+}
+#foter i{
+   color: #0101FF;
+}
+ .fouricon{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    
+ }
+ .fouricon i{
+    margin: 10px ;
+    font-size: 30px ;
+ }
+ .search-box{
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0 10px ;
+    position: relative ;
+ }
+ .search-box i{
+    position: absolute ;
+    font-size: 30px ;
+    right: 10px;
+    top: 10px;
+ }
+.search-box .box{
+   width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    outline: none ;
+    display: block ;
+    border: none;
+    margin: 0 5px;
+    font-size: 20px ;
+    background-color: #f0f0f0;
+    padding-left: 10px ;
+}
+#foter .fa-thumbs-up{
+   font-size: 40px ;
+   margin: 0 10px ;
+   padding: 0 10px ;
+}
+
+@media only screen and (max-width: 599px){
+   .nam p{
+      font-size :20px;
+   }
+
+   .container{
+      height: 450px ;
+   }
+.fouricon i{
+   font-size: 20px ;
+}
+.search-box i{
+   font-size: 25px ;
+}
+.search-box{
+   height :40px ;
+}
+.search-box .box{
+   height: 40px;
+}
+.data h4{
+   font-size: 20px ;
+}
+.container {
+   bottom: 50px ;
+}
+#foter{
+   height: 60px ;
+}
+#foter .fa-thumbs-up{
+   font-size: 25px ;}
+}

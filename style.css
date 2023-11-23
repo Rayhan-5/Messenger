@@ -1,0 +1,376 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   
+}
+body::-webkit-scrollbar{
+   display: none;
+}
+
+#navigation {
+  /* display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: red;
+   height: 60px;
+   width: 100%;
+   position: fixed;
+   z-index: 99;
+   border: 2px solid ;
+   overflow: scroll ;
+   top: 0;
+*/
+display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   z-index: 999;
+}
+#click{
+   display: none;
+}
+#click:checked ~ ul{
+   left: 0%;
+}
+
+#click:checked ~ #btn .fa-bars::before{
+   content :"\f00d";
+}
+
+#btn{
+   font-size: 30px;
+   margin:10px;
+   background-color: #DFDFDFD6;
+   padding:10px 15px;
+   border-radius: 50%;
+}
+#navigation p{
+   font-size: 30px;
+   left:70px;
+   position: absolute;
+   font-weight: bold;
+}
+.fa-pen{
+   font-size: 30px;
+   margin: 10px;
+   background-color: #DFDFDFD6;
+   padding: 10px;
+   border-radius: 50%;
+}
+.head ul{
+   background-color:#F5F5F5;
+   position: fixed;
+   width: 90%;
+   height: 100%;
+   margin-top: 70px;
+   top: 0;
+   left: -100%;
+   box-shadow: 3px 3px 2px ,-3px  #EFEFEF;
+   border-radius: 20px ;
+   transition: 1s;
+}
+.head ul li{
+   list-style: none;
+   margin: 20px;
+   padding: 20px;
+   border-radius: 20px;
+   
+}
+.head ul li:hover{
+   background-color: #C9C1C6;
+}
+.head ul .frist{
+   background-color:#C9C1C6; 
+}
+.head ul li a{
+   font-size: 30px;
+   text-decoration: none;
+   color: black;
+   
+   
+}
+.ul-head {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   align-items :center ;
+   margin: 5px;
+   
+}
+.ul-head h4{
+   font-size:40px;
+   letter-spacing: 25px;
+   left: 90px;
+   
+}
+.fa-gear{
+   font-size: 30px;
+   margin: 5px;
+}
+.logo{
+   position: relative;
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   background-color: #4070f4;
+   margin: 5px;
+}
+.logo2{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.fa-comment {
+   left: 10px;
+}
+.ul-foter{
+   display: flex ;
+   align-items :center ;
+   justify-content :space-between ;
+   
+   position: relative ;
+   height: 50px ;
+   font-size: 15px ;
+   margin: 10px ;
+   
+}
+.ul-foter a{
+   text-decoration: none ;
+}
+.search-box{
+  width :100%;
+  position: relative;
+  margin-top:75px;
+}
+.box{
+  width: 100%;
+padding :20px;
+  border-radius:25px ;
+  outline: none;
+  display :block ;
+  border: none;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 80px;
+  background-color: #f0f0f0;
+  
+}
+.fa-magnifying-glass{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 30px ;
+}
+#activebox::-webkit-scrollbar{
+   display: none;
+}
+#activebox{
+   width: 100%;
+   height: 110px ;
+   margin-top: 5px;
+   overflow: auto;
+   white-space: nowrap;
+   
+
+}
+.one{/*
+   width: 100px;
+   height: 100px;
+   background-color: greenyellow;
+   
+   margin: 5px;
+   display: inline-block;
+   background-image: url(/1680182742872.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   object-fit: cover;
+   position: relative ;*/
+   position: relative;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   background-color: #4070f4;
+   margin: 5px;
+   display: inline-block;
+}
+.one img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+
+}
+.one:after {
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: greenyellow;
+   right: 0;
+   bottom: 10px;
+   position: absolute ;
+   border-radius :50%;
+   border: 4px solid white ;
+}
+.name{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center ;
+}
+.name p{
+   font-weight:bold ;
+   color :black ;
+   padding: 10px 10%;;
+   border-radius: 10px ;
+   margin: 5px ;
+   background-color: #f0f0f0;
+   width: 100%;
+   text-align: center ;
+}
+.manlist{
+   margin-bottom: 105px;
+   
+}
+
+.manlist li {
+
+   list-style: none ;
+   align-items: center ;
+   display :flex ;
+   position: relative ;
+   margin :10px 0;
+}
+.manlist li p{
+   margin-bottom: 20px;
+   font-size: 20px ;
+   margin-left: 20px;
+}
+.manlist a{
+   text-decoration: none;
+   color: black;
+}
+li h2{
+   position: absolute ;
+   left: 110px;
+   top: 50px;
+}
+.manlist li:hover{
+   background-color: #ADADB1;
+}
+.two{
+   /*
+   width: 80px;
+   height: 80px;
+   background-color: greenyellow;
+   border-radius: 50%;
+   margin: 5px;
+   
+   background-image: url(/1680182742872.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   object-fit: cover;
+   align-items: center ;
+   display: flex ;
+   justify-content: space-between ;
+   position: relative ;
+   */
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   background-color: #4070f4;
+   margin: 5px;
+}
+.two img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+
+}
+.two:after {
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: greenyellow;
+   right: 0;
+   bottom: 0;
+   position: absolute ;
+   border-radius :50%;
+   border: 4px solid white ;
+   
+}
+#foter{
+   width: 100%;
+   height: 100px;
+   position: fixed ;
+   bottom: 0;
+   background-color: white;
+   display: flex;
+   align-items: center ;
+   justify-content: space-evenly;
+   box-shadow: 0.5px 5px 5px, -0.5px -1px  #EFEFEF;
+   
+}
+.chat{
+   display: flex ;
+   flex-direction: column ;
+   align-items:center ;
+   font-size: 30px ;
+   color: #D0D0D0;
+}
+.chat:hover{
+   color: #0156FF;
+}
+#noti{
+   position: relative ;
+   
+   padding-top: 5px;
+}
+.number{
+   display: flex ;
+   align-items: center ;
+   justify-content: center ;
+   width: 20px;
+   height: 20px;
+   position: absolute ;
+   color: white;
+   top:0;
+   left: 40px ;
+   border: 5px solid ;
+   border-radius: 50%;
+   background-color :red;
+}
+.number .nu{
+   text-align: center ;
+}
+@media only screen and (max-width:599px){
+   .ul-head h4{
+      letter-spacing: 10px;
+}
+.name p{
+   width: 100%;
+}
+#foter .chat{
+   font-size: 20px;
+}
+#foter{
+   height: 50px ;
+}
+.number{
+   left:25px;
+}
+
+.head ul li a{
+   font-size :20px ;
+}
+}
