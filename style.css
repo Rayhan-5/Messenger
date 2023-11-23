@@ -231,7 +231,7 @@ padding :20px;
    margin: 5px ;
    background-color: #f0f0f0;
    width: 100%;
-   text-align: center ;
+   text-align: center 
 }
 .manlist{
    margin-bottom: 105px;
@@ -318,7 +318,7 @@ li h2{
    display: flex;
    align-items: center ;
    justify-content: space-evenly;
-   box-shadow: 0.5px 5px 5px, -0.5px -1px  #EFEFEF;
+   box-shadow: -2px -9px 14px 0px #EFEFEF;  
    
 }
 .chat{
